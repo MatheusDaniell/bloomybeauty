@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloomy Beauty | Design de unhas em Maceió</title>
+<meta name="description" content="Design de unhas na Pajuçara, Maceió. Alongamento, esmaltação em gel, nail art e pedicure. Agende pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== 1. HEADER / MENU FIXO ========== -->
+<header class="header">
+  <a href="#inicio" class="brand"><img src="logo.png" alt="" width="44" height="44"><span>Bloomy Beauty</span></a>
+  <button class="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+  <nav id="menu" class="menu">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#produtos">Produtos</a>
+    <a href="#contato">Contato</a>
+    <a class="btn btn-wa" href="https://wa.me/5582999820188" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+<!-- ========== 2. HERO ========== -->
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <h1>Unhas que florescem com você</h1>
+    <p>Design de unhas com acabamento premium, no coração da Pajuçara.</p>
+    <a class="btn btn-solid" href="https://wa.me/5582999820188?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agende já pelo WhatsApp</a>
+  </div>
+ 
+  <figure class="hero-img">
+    <img src="unha marrom.jpeg" alt="Mulher exibindo unhas feitas no Bloomy Beauty" onerror="this.remove()">
+  </figure>
+</section>
+
+<!-- ========== 3. SOBRE ========== -->
+<section id="sobre" class="section about reveal">
+  <h2>Sobre o Bloomy Beauty</h2>
+  <p class="lead">Um espaço pensado para você cuidar das mãos e dos pés com calma, técnica e bom gosto. Cada design é feito sob medida, do formato à finalização.</p>
+  <ul class="values">
+    <li><h3>Qualidade</h3><p>Produtos selecionados e acabamento que dura.</p></li>
+    <li><h3>Experiência</h3><p>Profissionais treinadas em alongamento, gel e nail art.</p></li>
+    <li><h3>Entrega</h3><p>Atenção total ao seu pedido, no horário combinado.</p></li>
+  </ul>
+</section>
+
+<!-- ========== 4. CATÁLOGO COM FILTRO ========== -->
+<section id="produtos" class="section catalog reveal">
+  <h2>Nossos trabalhos</h2>
+  <div class="filters" role="group" aria-label="Filtrar por categoria">
+    <button class="chip active" data-filter="todos">Todos</button>
+    <button class="chip" data-filter="maos">Mãos</button>
+    <button class="chip" data-filter="pes">Nail</button>
+    <button class="chip" data-filter="ocasioes">Ocasiões especiais</button>
+  </div>
+  <!-- TROCAR: fotos reais em img/unha-1.jpg ... unha-8.jpg e preços reais -->
+  <div class="grid">
+    <article class="card" data-cat="maos"><div class="ph"><img src="unha com lista.jpeg" alt="Alongamento em gel" onerror="this.remove()"></div><h3>Alongamento em gel</h3><p class="price">R$ 150</p></article>
+    <article class="card" data-cat="maos"><div class="ph"><img src="unha metalica.jpeg" alt="Esmaltação em gel" onerror="this.remove()"></div><h3>Esmaltação em gel</h3><p class="price">R$ 80</p></article>
+    <article class="card" data-cat="maos"><div class="ph"><img src="unha degrade.jpeg" alt="Nail art" onerror="this.remove()"></div><h3>Nail art</h3><p class="price">R$ 120</p></article>
+    <article class="card" data-cat="pes"><div class="ph"><img src="Almond Nail.jpeg" alt="Almond Nail="this.remove()"></div><h3>Almond Nail</h3><p class="price">R$ 70</p></article>
+    <article class="card" data-cat="pes"><div class="ph"><img src="Blush Nails.jpeg" alt="Blush Nails" onerror="this.remove()"></div><h3>Blush Nails</h3><p class="price">R$ 90</p></article>
+    <article class="card" data-cat="ocasioes"><div class="ph"><img src="unha noiva.jpeg" alt="Unhas de noiva" onerror="this.remove()"></div><h3>Unhas de noiva</h3><p class="price">R$ 200</p></article>
+    <article class="card" data-cat="ocasioes"><div class="ph"><img src="unha marrom 2.jpeg" alt="Unhas para festa" onerror="this.remove()"></div><h3>Unhas para festa</h3><p class="price">R$ 180</p></article>
+    <article class="card" data-cat="maos ocasioes"><div class="ph"><img src="Francesinha.jpeg" alt="Recuperação de unhas" onerror="this.remove()"></div><h3>Francesinha</h3><p class="price">R$ 110</p></article>
+  </div>
+</section>
+
+<!-- ========== 5. DEPOIMENTOS (CARROSSEL) ========== -->
+<section class="section testimonials reveal" aria-label="Depoimentos">
+  <h2>Quem já passou por aqui</h2>
+  <!-- TROCAR: textos de exemplo, use depoimentos reais das clientes -->
+  <div class="carousel">
+    <button class="arrow prev" aria-label="Depoimento anterior">‹</button>
+    <div class="slides">
+      <blockquote class="slide active"><p>Saí de lá com as unhas mais lindas que já tive. Acabamento impecável.</p><cite>Mariana S.</cite></blockquote>
+      <blockquote class="slide"><p>Atendimento atencioso e o alongamento durou semanas sem descolar.</p><cite>Camila R.</cite></blockquote>
+      <blockquote class="slide"><p>Fiz as unhas para o meu casamento e foi exatamente o que eu imaginei.</p><cite>Juliana P.</cite></blockquote>
+    </div>
+    <button class="arrow next" aria-label="Próximo depoimento">›</button>
+  </div>
+  <div class="dots"></div>
+</section>
+
+<!-- ========== 6. LOCALIZAÇÃO E CONTATO ========== -->
+<section id="contato" class="section contact reveal">
+  <h2>Venha nos visitar</h2>
+  <div class="contact-grid">
+    <div>
+      <p><strong>Endereço</strong><br>R. Alm. Mascarenhas, 143 - Pajuçara<br>Maceió - AL, 57030-010</p>
+      <!-- AJUSTAR: horário de funcionamento -->
+      <p><strong>Horário</strong><br>Segunda a sábado, 9h às 19h</p>
+      <a class="btn btn-wa" href="https://wa.me/5582999820188" target="_blank" rel="noopener">Falar no WhatsApp</a>
+      <form id="form" novalidate>
+      </form>
+    </div>
+    <iframe class="map" title="Mapa do Bloomy Beauty" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=R.+Alm.+Mascarenhas,+143,+Paju%C3%A7ara,+Macei%C3%B3&output=embed"></iframe>
+  </div>
+</section>
+</main>
+
+<!-- ========== 7. FOOTER ========== -->
+<footer class="footer">
+  <img src="logo.png" alt="Bloomy Beauty" width="56" height="56">
+  <p>R. Alm. Mascarenhas, 143 - Pajuçara, Maceió - AL<br>(82) 99982-0188</p>
+  <p><a href="https://instagram.com/bloomybeauty1_" target="_blank" rel="noopener">Instagram @bloomybeauty1_</a> · <a href="https://wa.me/5582999820188" target="_blank" rel="noopener">WhatsApp</a></p>
+  <small>© <span id="year"></span> Bloomy Beauty. Todos os direitos reservados.</small>
+</footer>
+
+<!-- Botão flutuante do WhatsApp -->
+<a class="wa-float" href="https://wa.me/5582999820188" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+  <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.400-2A13 13 0 1 0 16 3zm0 2.400a10.600 10.600 0 1 1-5.600 19.600l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.600 10.600 0 0 1 16 5.400zm-4 5.600c-.3 0-.7.100-1 .5-.4.400-1.300 1.300-1.300 3.100s1.300 3.600 1.500 3.800c.2.300 2.600 4.100 6.400 5.600 3.100 1.200 3.800 1 4.400.9.700-.1 2.200-.9 2.500-1.800.3-.9.300-1.600.2-1.800-.1-.2-.4-.3-.8-.5s-2.200-1.100-2.500-1.200c-.3-.1-.6-.2-.8.200-.2.400-1 1.200-1.100 1.400-.2.200-.4.300-.8.100-.4-.2-1.600-.6-3-1.900-1.100-1-1.900-2.200-2.100-2.600-.2-.4 0-.6.200-.8l.6-.7c.2-.2.200-.4.400-.6.100-.3.100-.5 0-.7l-1.100-2.700c-.3-.7-.6-.6-.8-.6z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
